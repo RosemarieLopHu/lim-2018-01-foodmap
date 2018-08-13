@@ -1,0 +1,29 @@
+* {
+    font-family: Pacifico;
+}
+.yummy-brand {
+    font-weight: 500;
+    min-height: 10vh;
+    color: darkmagenta
+}
+.back-color{
+    background-color: #F7F9F9;
+}
+.imagenes {
+    width: 100%;
+    margin-top: 20px;
+    transition: transform .2s;
+ }
+ 
+ .imagenes:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ }
+.fotosCategorias {
+    position: relative;
+    text-align: center;
+    text-emphasis-color: white;
+    font-size: 20px;
+    font-weight: 500;
+ }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <title>Foodmap</title>
+</head>
+
+<body class="back-color">
+  <header>
+    <h1 class='yummy-brand text-center'>Yummy Map!</h1>
+  </header>
+  <main>
+    <!-- Buscador -->
+    <nav class="navbar-form center-block">
+      <form class="input-group d-flex justify-content-center">
+        <input type="text" id="search" class="form-control" placeholder="¿Qué se te antoja comer?">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+
+    <!--Mapa de geolocalizaciòn-->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12 text-center">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Respuestas -->
+    <section id="results" class="container-fluid">
+      <div class="row">
+        <ul class="list-unstyled col-xs-12 col-sm-10 col-sm-offset-1">
+        </ul>
+      </div>
+    </section>
+    <!-- Modal -->
+    <section>
+      <div class="fotosCategorias">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 text-center">
+            <img class="imagenes" src="assets/img/peruana/cala.jpg">
+            <div class="centered">Peruana</div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 text-center">
+            <img class="imagenes" src="assets/img/italiana/tratoria.jpg">
+            <div class="centered">Italiana</div>
+          </div>
+          <div class="col-sm-6 col-md-4 text-center">
+            <img class="imagenes" src="assets/img/vegana/veggie.jpg">
+            <div class="centered">Vegana</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-4 text-center">
+            <img class="imagenes" src="assets/img/japonesa/kinjo.jpg">
+            <div class="centered">Japonesa</div>
+          </div>
+          <div class="col-sm-6 col-md-4 text-center">
+            <img class="imagenes" src="assets/img/venezolana/arepacafe.jpg">
+            <div class="centered">Venezolana</div>
+          </div>
+          <div class="col-sm-6 col-md-4 text-center">
+            <img class="imagenes" src="assets/img/fusion/arlotia.JPG">
+            <div class="centered">Fusiòn</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7i9Z6IoKM_vzFr4usxe0A5M8pFixhblc&callback=initMap"></script>
+
+</body>
+
+</html>
